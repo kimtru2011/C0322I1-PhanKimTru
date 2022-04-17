@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Caculator</h2>
+    <input type="number" id ="nb1">
+    <input type="number" id="nb2">
+    <table>
+        <tr>
+            <td>
+                <input type = "button" onclick = "tong()" value="Addition(+)">
+            </td>
+            <td>
+                <input type = "button" onclick = "hieu()" value="Subtration(-)">
+            </td>
+            <td>
+                <input type = "button" onclick = "tich()" value="Mutiplication(x)"
+            </td>
+            <td>
+                <input type = "button" onclick = "thuong()" value="Division(/)"
+            </td>
+        </tr>
+    </table>
+    <p>Result: <span id="kq"></span></p>
+    <script>
+        function tong() {
+            let sum = parseInt(document.getElementById("nb1").value) + parseInt(document.getElementById("nb2").value);
+            document.getElementById("kq").innerText = sum;
+        }
+        function hieu() {
+            let tru = parseInt(document.getElementById("nb1").value) - parseInt(document.getElementById("nb2").value);
+            document.getElementById("kq").innerText = tru;
+        }
+        function tich() {
+            let nhan = parseInt(document.getElementById("nb1").value) * parseInt(document.getElementById("nb2").value);
+            document.getElementById("kq").innerText = nhan;
+        }
+        function thuong() {
+            let chia = parseInt(document.getElementById("nb1").value) / parseInt(document.getElementById("nb2").value);
+            document.getElementById("kq").innerText = chia;
+        }
+    </script>
+</body>
+</html>
