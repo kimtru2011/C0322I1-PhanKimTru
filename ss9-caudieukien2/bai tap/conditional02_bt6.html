@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập a: ");
+        let b = prompt("Nhập b: ");
+        if ( a == 0 && b == 0) {
+            document.write("Phương trình có vô số nghiệm");
+        } else if (a!=0) {
+            let x = parseFloat(-b)/parseFloat(a);
+            document.write("Phương trình có nghiệm duy nhất là: " +x)
+        } else {
+            document.write("Phương trình vô nghiệm")
+        }
+    </script>
+</body>
+</html>

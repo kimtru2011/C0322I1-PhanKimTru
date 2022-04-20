@@ -8,9 +8,22 @@
     <script>
         var year=parseInt(prompt("Enter a year"));
         var isLeapYear = false;
-        var isDisvisivLeBy4 = year % 4 ==0;
-        if (isDivisivLeBy) {
-            var isDivisi
+        var isDivisivLeBy4 = year % 4 ==0;
+        if (isDivisivLeBy4) {
+            var isDivisivLeBy100 = year % 100 ==0;
+            if (isDivisivLeBy100) {
+                var isDivisivLeBy400 = year % 400 ==0;
+                if (isDivisivLeBy400) {
+                    isLeapYear = true;
+                }
+            } else {
+                isLeapYear = true;
+            }
+        }
+        if (isLeapYear) {
+            alert ( year + "is a leap year");
+        } else {
+            alert ( year + "is a not leap year");
         }
     </script>
 </body>

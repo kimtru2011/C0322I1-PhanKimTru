@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <script>
+        var value = prompt("Moi nguoi nhap: ");
+        if (value == "admin") {
+            var pass = prompt("nhap pass: ");
+            if (pass == "TheMaster") {
+                alert ("Welcome");
+            }
+            else if (pass == "null") {
+                alert ("Canceled");
+            } else {
+                alert ("Wrong password");
+            }
+        }
+        else if (value == "null") {
+            alert ("canceld");
+        } else {
+            alert ("I don't know you");
+        }
+    </script>
 </body>
 </html>

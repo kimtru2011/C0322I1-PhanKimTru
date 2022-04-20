@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Tn = parseInt(prompt("Nhập tiền tháng của bạn: "));
+        if (Tn<=5000000) {
+            let tt = 5 * Tn / 100;
+            document.write("Tiền thuế bạn phải nộp: " + tt);
+        } else if (Tn<=10000000) {
+            let tt = 10 * Tn / 100;
+            document.write("Tiền thuế bạn phải nộp: " + tt);
+        } else if (Tn<=18000000) {
+            let tt = 15 * Tn / 100;
+            document.write("Tiền thuế bạn phải nộp: " + tt);
+        } else if (Tn<=32000000) {
+            let tt = 20 * Tn / 100;
+            document.write("Tiền thuế bạn phải nộp: " + tt);
+        } else if (Tn<=52000000) {
+            let tt = 25 * Tn / 100;
+            document.write("Tiền thuế bạn phải nộp: " + tt);
+        } else if (Tn<=80000000) {
+            let tt = 30 * Tn / 100;
+            document.write("Tiền thuế bạn phải nộp: " + tt);
+        } else {
+            let tt = 35 * Tn / 100;
+            document.write("Tiền thuế bạn phải nộp: " + tt);
+        }
+    </script>
+</body>
+</html>

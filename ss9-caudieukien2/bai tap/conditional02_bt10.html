@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Dtt = parseInt(prompt("Nhập số kW tiêu thụ: "));
+        if (Dtt<=100) {
+            let tien = Dtt * 600;
+            document.write("Tiền điện của bạn là: " + tien);
+        } else if (Dtt<=150) {
+            let tien = Dtt * 700;
+            document.write("Tiền điện của bạn là: " + tien);
+        } else if (Dtt<=200) {
+            let tien = Dtt * 900;
+            document.write("Tiền điện của bạn là: " + tien);
+        } else {
+            let tien = Dtt * 1100;
+            document.write("Tiền điện của bạn là: " + tien);
+        }
+    </script>
+</body>
+</html>

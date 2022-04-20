@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let diem1 = parseInt(prompt("Mời nhập điểm bài kiểm tra: "));
+        let diem2 = parseInt(prompt(" Mời nhập điểm thi giữa kỳ: "));
+        let diem3 = parseInt(prompt(" Mời nhập điểm thi cuối kỳ: "));
+        let diemtb = (diem1 + diem2 + diem3) / 3;
+        if (diemtb >=8) {
+            document.write("Học lực của bạn là học sinh giỏi");
+        } else if (diemtb >=6.5) {
+            document.write("Học lực của bạn là học sinh khá");
+        } else if (diemtb >=5) {
+            document.write("Học lực của bạn là học sinh trung bình");
+        } else {
+            document.write("Học lực của bạn là học sinh yếu");
+        }
+    </script>
+</body>
+</html>

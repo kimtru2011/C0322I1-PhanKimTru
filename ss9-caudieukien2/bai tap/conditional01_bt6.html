@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let mds = prompt("Nhập tổng mức doanh số bán hàng: ");
+        if (mds<=100) {
+            let hh = (mds*5)/100;
+            document.write("Tiền hoa hồng bạn được nhận: " + hh);
+        } else if (mds<=300) {
+            let hh = (mds*10)/100;
+            document.write("Tiền hoa hồng bạn được nhận: " + hh);
+        } else {
+            let hh = (mds*20)/100;
+            document.write("Tiền hoa hồng bạn được nhận: " + hh);
+        }
+    </script>
+</body>
+</html>
