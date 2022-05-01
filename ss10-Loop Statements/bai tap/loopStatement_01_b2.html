@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let nhap = prompt("Nhập nhiệt độ hiện tại: ");
+        while (nhap!=0) {
+            if (nhap>100) {
+               nhap = parseInt(prompt("Giảm nhiệt độ nhỏ hơn: " +nhap));
+            } else if (nhap<20) {
+                nhap = parseInt(prompt("Tăng nhiệt độ lớn hơn: " +nhap));
+            } else {
+                alert("ok");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

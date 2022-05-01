@@ -3,47 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-       tr,td {
-           text-align: center;
-       }
-       th {
-           border: 1px solid black;
-           padding: 10px;
-       }
-    </style>
 </head>
 <body>
-    <form>
-        <table>
-            <tr>
-                <th colspan="4"></th>
-            </tr>
-            <tr>
-                <td> <input type= "button" value= "1"</td>
-                <td> <input type="button" value= "2"></td>
-                <td> <input type="button" value= "3"></td>
-                <td> <input type="button" value= "+"></td>
-            </tr>
-            <tr>
-                <td> <input type= "button" value= "4"</td>
-                <td> <input type="button" value= "5"></td>
-                <td> <input type="button" value= "6"></td>
-                <td> <input type="button" value= "-"></td>
-            </tr>
-            <tr>
-                <td> <input type= "button" value= "7"</td>
-                <td> <input type="button" value= "8"></td>
-                <td> <input type="button" value= "9"></td>
-                <td> <input type="button" value= "x"></td>
-            </tr>
-            <tr>
-                <td> <input type= "button" value= "c"</td>
-                <td> <input type="button" value= "0"></td>
-                <td> <input type="button" value= "="></td>
-                <td> <input type="button" value= "/"></td>
-            </tr>
-        </table>
-    </form>
+    <table>
+        <tr>
+            <td colspan="4">
+                <p id="result"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="bam('1')">1</button>
+            </td>
+            <td>
+                <button onclick = "bam('2')">2</button>
+            </td>
+            <td>
+                <button onclick = "bam('3')">3</button>
+            </td>
+            <td>
+                <button onclick = "bam('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="bam('4')">4</button>
+            </td>
+            <td>
+                <button onclick = "bam('5')">5</button>
+            </td>
+            <td>
+                <button onclick = "bam('6')">6</button>
+            </td>
+            <td>
+                <button onclick = "bam('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="bam('7')">7</button>
+            </td>
+            <td>
+                <button onclick = "bam('8')">8</button>
+            </td>
+            <td>
+                <button onclick = "bam('9')">9</button>
+            </td>
+            <td>
+                <button onclick = "bam('*')">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="bam('c')">C</button>
+            </td>
+            <td>
+                <button onclick = "bam('0')">0</button>
+            </td>
+            <td>
+                <button onclick = "bam('=')">=</button>
+            </td>
+            <td>
+                <button onclick = "bam('/')">/</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function bam(a) {
+            let value = document.getElementById("result").innerText;
+            switch (a) {
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+                case "0":
+                case "-":
+                case "*":
+                case "/":
+                case "+":
+                    value = value + a;
+                    break;
+                case "c":
+                    value = " ";
+                    break;
+                case "=":
+                    value = eval(value);
+                    break;
+            }
+            document.getElementById("result").innerText = value;
+        }
+    </script>
 </body>
 </html>

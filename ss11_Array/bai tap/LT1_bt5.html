@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let mangso = [];
+        let mangsoam = [];
+        let a = prompt("Nhập vào mảng: ");
+        for (let i=0;i<a;i++) {
+            mangso[i]= prompt("Nhập phần tử mảng: ");
+            if (mangso[i]<0) {
+                mangsoam.push(mangso[i]);
+            }
+        }
+        document.write(mangso + "<br>");
+        document.write("Mảng số âm có: " +mangsoam.length +" " + "Số: " + mangsoam);
+    </script>
+</body>
+</html>

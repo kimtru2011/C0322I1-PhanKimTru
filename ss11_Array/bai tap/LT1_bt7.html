@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let mangso =[];
+        let a = prompt("Nhập mảng: ");
+        let boo = true;
+        let mangnew = [];
+        for (let i=0; i<a; i++) {
+            mangso[i] = prompt("nhập phần tử mảng: ");
+            if(mangso[i]=="V") {
+                boo = false;
+            }
+            if (mangso[i]!="V") {
+                mangnew.push(mangso[i])
+            }
+        }
+        document.write(mangso+"<br>");
+        if (boo==false){
+            document.write(mangnew);
+        }
+    </script>
+</body>
+</html>

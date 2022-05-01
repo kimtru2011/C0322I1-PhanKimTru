@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập từ cần tìm kiếm: ")
+        let Eng = ["Hello", "Good", "Start", "win", "lose"];
+        let Vi = ["Xin chào", "Tốt", "Bắt đầu", "Chiến thắng", "thua"];
+            if (Eng.indexOf(a) !== -1) {
+                document.write(Vi[Eng.indexOf(a)]);
+            } else {
+                alert("không tìm thấy");
+            }
+    </script>
+</body>
+</html>

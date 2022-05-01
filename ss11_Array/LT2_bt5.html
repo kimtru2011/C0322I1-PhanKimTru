@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập chuỗi 1: ");
+        let b = prompt("Nhập chuỗi 2: ");
+        let ss;
+        document.write("Chuỗi 1: " +a +"<br>" + "chuỗi 2: " +b +"<br>");
+        if (a.length != b.length) {
+            document.write("2 chuỗi k giống nhau" +"<br>");
+        } else {
+            for (let i=0; i<a.length; i++) {
+                for (let j=0; j<b.length; j++) {
+                    if (a[i]==b[j]) {
+                        ss = true;
+                    } else {
+                        ss = false;
+                    }
+                }
+            }
+            if (ss ==false) {
+                document.write("2 chuỗi không giống nhau");
+            } else {
+                document.write("2 chuỗi giống nhau");
+            }
+        }
+    </script>
+</body>
+</html>

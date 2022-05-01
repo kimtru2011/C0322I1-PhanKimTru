@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let tienvay = parseInt(prompt("Nhập tiền vay: "));
+        let thangvay = parseInt(prompt("Nhập số tháng vay: "));
+        if (thangvay<=6 && tienvay<=10000000) {
+            let tienlai = tienvay * 1 / 100;
+            document.write("Tiền lãi phải đóng: " + tienlai);
+        } else if (thangvay<=9 && tienvay<=20000000) {
+            let tienlai = tienvay * 2 / 100;
+            document.write("Tiền lãi phải đóng: " + tienlai);
+        } else {
+            let tienlai = tienvay * 3 / 100;
+            document.write("Tiền lãi phải đóng: " + tienlai);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập mảng: ")
+        let mangsua = [];
+        document.write("mảng gồm: " +a +"<br>");
+        for (let i=0; i<a.length; i++) {
+            for (let j=0; j<a[i].length; j++) {
+                if (a[i][j] == "-") {
+                    a[i][j] ="_"
+                    mangsua.push("_")
+                } else {
+                    mangsua.push(a[i][j]);
+                }
+            }
+        }
+        document.write("Mảng sửa gồm: " +mangsua.join(""));
+    </script>
+</body>
+</html>
