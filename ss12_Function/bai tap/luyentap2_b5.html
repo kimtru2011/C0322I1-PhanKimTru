@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>  
+    <script>
+        function timMin(nhap) {
+            let a;
+            for (let i =0; i<nhap.length;i++) {
+                a = nhap[0];
+                if (nhap[i]<a) {
+                    a = nhap[i];
+                }
+            }
+            return a;
+        }
+        function kqMin() {
+            let nhap = [];
+            for (let i=0; i<3; i++) {
+                nhap.push(Number(prompt("Nhập mảng số "+i)));
+            }
+            let min = timMin(nhap);
+            document.write("Mảng số gồm: ["+nhap+"] <br>");
+            document.write("min: " +min)
+        }
+        kqMin();
+    </script>
+</body>
+</html>

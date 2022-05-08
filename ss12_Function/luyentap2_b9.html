@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function f() {
+            let mang = [1,2,4,5,24,"d", "a", "b"];
+            let kytu = prompt("Nhập ký tự bất kỳ");
+            document.write("Mảng gồm: ["+mang+"]<br>");
+            let kt = kiemtra(kytu,mang);
+            if (kt>0) {
+                document.write("có: " +kt + " ký tự " + kytu+ " trong mảng");
+            } else {
+                document.write("k có dữ liệu trong mảng");
+            }
+        }
+        function kiemtra(kytu, mang) {
+            let dem =0;
+            for (let i =0; i<mang.length;i++) {
+                if(kytu==mang[i]) {
+                    dem++;
+                }
+            }
+            if(dem>0) {
+                return dem
+            }
+            return -1;
+        }
+        f();
+    </script>
+</body>
+</html>

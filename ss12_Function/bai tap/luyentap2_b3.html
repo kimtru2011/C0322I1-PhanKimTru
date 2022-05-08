@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function giaiThua(so) {
+            let giaithua = 1;
+            if(so>=1) {
+                for (let i = 1; i <= so; i++) {
+                    giaithua = giaithua * i;
+                }
+            }else if (so==0) {
+                    giaithua = 1;
+                } else {
+                    return "Giai thua k xác định";
+                }
+                return giaithua;
+        }
+        function ketqua() {
+            let so = Number(prompt("Nhập n giai thừa: "));
+            let gt = giaiThua(so);
+            document.write(so + "!" + " = " +gt);
+        }
+        ketqua();
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function doicho(so_a,so_b) {
+            let mang = [so_b,so_a];
+            return mang;
+        }
+        function kq() {
+            let so_a = prompt("Nhập số thứ 1: ");
+            let so_b =prompt("Nhập số thứ 2: ");
+            let result = doicho(so_a,so_b);
+            document.write("số đã đổi: " +result[0] + " " + result[1]);
+        }
+        kq();
+    </script>
+</body>
+</html>

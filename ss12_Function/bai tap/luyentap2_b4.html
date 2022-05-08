@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function kiemtraChuoiso(a) {
+            if(a%2==0 || a%2==1) {
+                return true;
+            }
+                return false;
+        }
+        function kiemtra() {
+            let a = prompt("Nhập vào: ");
+            let b = kiemtraChuoiso(a);
+            if (b) {
+                alert("Đây là số");
+            } else {
+                alert("Đây là chuỗi");
+            }
+        }
+        kiemtra();
+    </script>
+</body>
+</html>

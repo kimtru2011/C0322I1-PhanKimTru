@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function dienTich(r,pi) {
+            let s = r*r*pi;
+            return s;
+        }
+        function chuVi(r,pi) {
+            let c = 2*r*pi;
+            return c;
+        }
+        function ketqua() {
+            const pi = 3.14;
+            let r = Number(prompt("Nhập bán kính hình tròn: "));
+            let dientich = dienTich(r,pi);
+            let chuvi = chuVi(r,pi);
+            document.write("Diện tích hình tròn: " +dientich +"<br>");
+            document.write("Chu vi hình tròn: " +chuvi);
+        }
+        ketqua();
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function kiemtra(kytu) {
+
+            if(/[a-zA-z]/.test(kytu)) {
+                return true;
+            }
+            return false;
+        }
+        function f() {
+            let kytu =prompt("Nhập: ");
+            let a = kiemtra(kytu);
+            if (a==true) {
+                alert(kytu+ "");
+            } else {
+                alert(kytu+ "");
+            }
+        }
+        f();
+    </script>
+</body>
+</html>
