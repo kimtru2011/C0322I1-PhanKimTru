@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Rectangle {
+            constructor(d,r) {
+                this.d = d;
+                this.r = r;
+            }
+
+            getChieudai() {
+                return this.d;
+            }
+            getChieurong() {
+                return this.r;
+            }
+            getAre() {
+                return this.d*this.r;
+            }
+            getPer() {
+                return (this.d+this.r)*2;
+            }
+        }
+        let hinhchunhat = new Rectangle(1000,2000);
+        let chieu_dai = hinhchunhat.getChieudai();
+        let chieu_rong = hinhchunhat.getChieurong();
+        let chu_vi = hinhchunhat.getPer();
+        let dien_tich = hinhchunhat.getAre();
+        document.write("Chiều dài = " +chieu_dai+ " Chiều rộng = " + chieu_rong+"<br>");
+        document.write("chu vi hình chữ nhật: "+chu_vi+"<br>"+ "Diện tích: " +dien_tich+"<br>");
+        document.write("<canvas id='canvasId' width=chieu_dai height=chieu_rong style='border:1px solid #c3c3c3;'></canvas>");
+        let cxt = document.getElementById("canvasId").getContext("2d");
+    </script>
+</body>
+</html>

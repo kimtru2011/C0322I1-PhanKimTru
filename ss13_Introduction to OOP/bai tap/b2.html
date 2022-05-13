@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Temperature {
+            constructor(doC) {
+                this.doC = doC;
+            }
+            getDoC() {
+                return this.doC;
+            }
+            convertToK(){
+                return this.doC+273.15;
+            }
+            convertToF(){
+                return this.doC*1.8+32;
+            }
+
+        }
+        let nhietdo = Number(prompt("Nhập nhiệt độ: "));
+        while (nhietdo<-273) {
+            nhietdo = Number(prompt("Nhập lại nhiệt độ: "));
+        }
+        let temp = new Temperature(nhietdo);
+        let C = temp.getDoC();
+        let F = temp.convertToF();
+        let K = temp.convertToK();
+        alert("Nhiệt độ: "+C+"*C bằng "+F+"*F và "+K+"*K");
+    </script>
+</body>
+</html>

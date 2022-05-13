@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Battery {
+            constructor(enrgy) {
+                this.enrgy = enrgy;
+            }
+            getEnergy() {
+                return this.enrgy;
+            }
+            decraseEnergy(){
+                if(this.enrgy>0) {
+                    this.enrgy --;
+                }
+            }
+        }
+        class FlashLamp {
+            constructor(battery) {
+                this.battery = battery;
+            }
+            setBattery(newBattery) {
+                this.battery = newBattery;
+            }
+            getBatterInfor() {
+                return this.battery.getEnergy();
+            }
+            light() {
+                if(this.status) {
+                    alert("Lighting");
+                } else {
+                    alert("Not lighting");
+                }
+            }
+            turnOn() {
+                this.status = true;
+            }
+            turnOff() {
+                this.status = false;
+            }
+        }
+
+    </script>
+</body>
+</html>
